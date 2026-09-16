@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "reflexivity",
+  "version": "0.1.0",
+  "description": "Research companies, themes, competitors and published insights from Reflexivity's Knowledge Graph through focused workflows and the Reflexivity research MCP server.",
+  "author": {
+    "name": "Reflexivity",
+    "url": "https://reflexivity.com"
+  },
+  "homepage": "https://reflexivity.com",
+  "repository": "https://github.com/toggleglobal/reflexivity-ai-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "investment-research",
+    "knowledge-graph",
+    "equities",
+    "catalysts",
+    "earnings"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Reflexivity Research",
+        "shortDescription": "Company, theme and insight research from Reflexivity",
+        "longDescription": "Connect to the Reflexivity research MCP server and run focused workflows: brief a company on its themes, competitors and recent catalysts; find companies exposed to a theme or screen a watchlist against it; and search published catalyst, earnings and scenario insights.",
+        "developerName": "Reflexivity",
+        "category": "Productivity",
+        "capabilities": [
+          "Read"
+        ],
+        "websiteURL": "https://reflexivity.com",
+        "defaultPrompt": [
+          "Set up Reflexivity Research for me.",
+          "Brief me on Nvidia: themes, competitors and recent catalysts.",
+          "Which companies in my watchlist are exposed to electric vehicles?"
+        ]
+      }
+    }
+  }
+}
