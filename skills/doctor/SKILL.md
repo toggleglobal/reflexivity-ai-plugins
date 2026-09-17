@@ -3,7 +3,7 @@ name: doctor
 description: Diagnose the Reflexivity plugin, MCP server connection, sign-in and entitlement without changing anything. Use when Reflexivity tools are missing, calls fail with UNAUTHORIZED, FORBIDDEN, 401 or 403, the server seems unreachable, or the user asks whether Reflexivity is ready.
 ---
 
-# Diagnose Reflexivity Research
+# Check the Reflexivity Connection
 
 Run a read-only health check for the current coding-agent host. Do not sign in,
 reload plugins, edit configuration or call any tool other than
@@ -15,7 +15,7 @@ reload plugins, edit configuration or call any tool other than
 
 Use only the check for the current host:
 
-- Cursor: Cursor Settings > Plugins shows Reflexivity Research installed and enabled; Cursor Settings > Tools & MCP lists `reflexivity-research`.
+- Cursor: Cursor Settings > Plugins shows Reflexivity installed and enabled; Cursor Settings > Tools & MCP lists `reflexivity-research`.
 - Claude Code: `claude plugin list --json` shows `reflexivity` enabled; `/mcp` lists `reflexivity-research`.
 - Codex: the plugin is enabled under `/plugins`; `codex mcp list` shows `reflexivity-research`.
 
@@ -39,7 +39,7 @@ Call `list_saved_universes` with no arguments.
 | --- | --- | --- |
 | `universes` list plus `coverage` | Signed in and entitled | None. Note the watchlist and basket counts. |
 | `UNAUTHORIZED` or HTTP 401 | Not signed in, or the token expired | Run the `setup` workflow |
-| `FORBIDDEN` or HTTP 403 | Signed in; plan lacks research MCP access (Plus, Pro or admin) | Check the plan on the signed-in account |
+| `FORBIDDEN` or HTTP 403 | Signed in; account lacks research MCP access | Check research access for the signed-in account |
 | Transport error, timeout or HTTP 404 | Endpoint unreachable | Confirm the host can reach `api.reflexivity.com` and `identity.reflexivity.com`; corporate proxies are the usual cause |
 | `PARTIAL_UPSTREAM_FAILURE`, or `source_status` not `ok` | Server is up; one upstream is down | Retry later, or pass `partial_ok: true` for the families that answer |
 
@@ -54,6 +54,6 @@ Return a compact table:
 | Plugin | Ready, warning or blocked | Installed version and reload guidance |
 | Server | Ready or blocked | Tool count out of seven |
 | Sign-in | Ready or blocked | Result code of `list_saved_universes` |
-| Entitlement | Ready or blocked | Plan requirement when 403 |
+| Entitlement | Ready or blocked | Account access requirement when 403 |
 
 Do not report overall readiness when a required check is blocked or unverified.

@@ -3,7 +3,7 @@ name: setup
 description: Connect and sign in to the Reflexivity research MCP server for the current coding agent. Use when the user asks to install or connect Reflexivity, sign in, fix an UNAUTHORIZED or 401 error, or verify that the Reflexivity tools are available.
 ---
 
-# Set Up Reflexivity Research
+# Connect Reflexivity
 
 The plugin bundles the `reflexivity-research` MCP server
 (`https://api.reflexivity.com/external-research-mcp/mcp`). Sign-in is OAuth 2.1
@@ -53,7 +53,7 @@ metadata only.
 
 - A `universes` list (possibly empty) with a `coverage` block: sign-in works and the account is entitled.
 - `UNAUTHORIZED` or HTTP 401: sign-in did not complete or the token expired. Repeat step 2.
-- `FORBIDDEN` or HTTP 403: signed in, but the account's plan does not include research MCP access (Plus, Pro or admin). Tell the user to check the plan on the account they signed in with.
+- `FORBIDDEN` or HTTP 403: signed in, but the account does not have research MCP access. Tell the user to check research access for the account they signed in with.
 - A transport error or HTTP 404: the endpoint is unreachable. Report the URL and that the host must reach `api.reflexivity.com` and `identity.reflexivity.com`.
 
 ## Completion report
