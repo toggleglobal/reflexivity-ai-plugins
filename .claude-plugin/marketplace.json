@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "reflexivity",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Official Reflexivity plugin for thematic, company, and market research.",
   "owner": {
     "name": "Reflexivity"
@@ -10,7 +10,7 @@
     {
       "name": "reflexivity",
       "description": "Explore company exposures, competitors and themes, with published research from Reflexivity.",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": {
         "name": "Reflexivity"
       },

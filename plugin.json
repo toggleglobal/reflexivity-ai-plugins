@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "reflexivity",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Explore company exposures, competitors and themes, with published research from Reflexivity.",
   "author": {
     "name": "Reflexivity",
@@ -36,7 +36,9 @@
           "Explain NVIDIA’s main exposures and competitors.",
           "Which companies are exposed to electric vehicles?",
           "Summarize recent earnings for my watchlist."
-        ]
+        ],
+        "logo": "./assets/reflexivity.svg",
+        "composerIcon": "./assets/reflexivity.svg"
       }
     }
   }

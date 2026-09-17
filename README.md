@@ -1,3 +1,5 @@
+<img src="assets/reflexivity.svg" alt="Reflexivity logo" width="96" height="96">
+
 # Reflexivity
 
 **Thematic, company, and market research**
