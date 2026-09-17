@@ -46,12 +46,3 @@ for inst, schema in (("plugin.json", "/tmp/ap-plugin.schema.json"), ("mcp.json",
 # Cursor: load the plugin locally
 agent --plugin-dir .
 ```
-
-## Testing against staging
-
-The production endpoint requires a production Reflexivity account. To exercise
-the workflows against staging, copy the repository, replace the URL in the
-three MCP configs with `https://api.staging.rflx.co.uk/external-research-mcp/mcp`,
-and load that copy locally (`~/.cursor/plugins/local/reflexivity/`,
-`claude --plugin-dir <copy>`, or a Codex personal marketplace). Never commit
-the staging URL.
