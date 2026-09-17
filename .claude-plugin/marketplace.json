@@ -1,16 +1,16 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "reflexivity",
-  "version": "0.1.0",
-  "description": "Official Reflexivity plugin marketplace for AI coding tools.",
+  "version": "0.1.1",
+  "description": "Official Reflexivity plugin for thematic, company, and market research.",
   "owner": {
     "name": "Reflexivity"
   },
   "plugins": [
     {
       "name": "reflexivity",
-      "description": "Research companies, themes, competitors and published insights from Reflexivity's Knowledge Graph through focused workflows and the Reflexivity research MCP server.",
-      "version": "0.1.0",
+      "description": "Explore company exposures, competitors and themes, with published research from Reflexivity.",
+      "version": "0.1.1",
       "author": {
         "name": "Reflexivity"
       },
@@ -20,7 +20,18 @@
         "source": "url",
         "url": "https://github.com/toggleglobal/reflexivity-ai-plugins.git"
       },
-      "category": "productivity"
+      "category": "finance",
+      "displayName": "Reflexivity",
+      "keywords": [
+        "investment-research",
+        "thematic-research",
+        "company-research",
+        "market-research",
+        "knowledge-graph",
+        "equities",
+        "earnings",
+        "catalysts"
+      ]
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "reflexivity",
-  "version": "0.1.0",
-  "description": "Research companies, themes, competitors and published insights from Reflexivity's Knowledge Graph through focused workflows and the Reflexivity research MCP server.",
+  "version": "0.1.1",
+  "description": "Explore company exposures, competitors and themes, with published research from Reflexivity.",
   "author": {
     "name": "Reflexivity",
     "url": "https://reflexivity.com"
@@ -12,27 +12,30 @@
   "license": "Apache-2.0",
   "keywords": [
     "investment-research",
+    "thematic-research",
+    "company-research",
+    "market-research",
     "knowledge-graph",
     "equities",
-    "catalysts",
-    "earnings"
+    "earnings",
+    "catalysts"
   ],
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Reflexivity Research",
-        "shortDescription": "Company, theme and insight research from Reflexivity",
-        "longDescription": "Connect to the Reflexivity research MCP server and run focused workflows: brief a company on its themes, competitors and recent catalysts; find companies exposed to a theme or screen a watchlist against it; and search published catalyst, earnings and scenario insights.",
+        "displayName": "Reflexivity",
+        "shortDescription": "Thematic, company, and market research",
+        "longDescription": "Understand company exposures and competitive relationships through Reflexivity’s Knowledge Graph. Find companies connected to a theme, explore supporting evidence, and read published research on earnings, catalysts and scenarios. Focus your research using saved watchlists and baskets.",
         "developerName": "Reflexivity",
-        "category": "Productivity",
+        "category": "Finance",
         "capabilities": [
           "Read"
         ],
         "websiteURL": "https://reflexivity.com",
         "defaultPrompt": [
-          "Set up Reflexivity Research for me.",
-          "Brief me on Nvidia: themes, competitors and recent catalysts.",
-          "Which companies in my watchlist are exposed to electric vehicles?"
+          "Explain NVIDIA’s main exposures and competitors.",
+          "Which companies are exposed to electric vehicles?",
+          "Summarize recent earnings for my watchlist."
         ]
       }
     }

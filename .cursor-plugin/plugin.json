@@ -1,8 +1,8 @@
 {
   "name": "reflexivity",
-  "displayName": "Reflexivity Research",
-  "version": "0.1.0",
-  "description": "Research companies, themes, competitors and published insights from Reflexivity's Knowledge Graph through focused workflows and the Reflexivity research MCP server.",
+  "displayName": "Reflexivity",
+  "version": "0.1.1",
+  "description": "Explore company exposures, competitors and themes, with published research from Reflexivity.",
   "author": {
     "name": "Reflexivity"
   },
@@ -11,10 +11,13 @@
   "license": "Apache-2.0",
   "keywords": [
     "investment-research",
+    "thematic-research",
+    "company-research",
+    "market-research",
     "knowledge-graph",
     "equities",
-    "catalysts",
-    "earnings"
+    "earnings",
+    "catalysts"
   ],
   "skills": "./skills/",
   "mcpServers": "./.cursor-plugin/mcp.json"

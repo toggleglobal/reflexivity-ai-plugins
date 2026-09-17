@@ -4,14 +4,14 @@
     "name": "Reflexivity"
   },
   "metadata": {
-    "description": "Reflexivity plugins for AI coding tools."
+    "description": "Official Reflexivity plugin for thematic, company, and market research."
   },
   "plugins": [
     {
       "name": "reflexivity",
       "source": ".",
-      "version": "0.1.0",
-      "description": "Research companies, themes, competitors and published insights from Reflexivity's Knowledge Graph through focused workflows and the Reflexivity research MCP server.",
+      "version": "0.1.1",
+      "description": "Explore company exposures, competitors and themes, with published research from Reflexivity.",
       "category": "productivity"
     }
   ]
