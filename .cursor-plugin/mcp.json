@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "reflexivity-research": {
+      "url": "https://api.reflexivity.com/external-research-mcp/mcp"
+    }
+  }
+}

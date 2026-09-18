@@ -1,0 +1,25 @@
+{
+  "name": "reflexivity",
+  "displayName": "Reflexivity",
+  "version": "0.1.2",
+  "description": "Explore company exposures, competitors and themes, with published research from Reflexivity.",
+  "author": {
+    "name": "Reflexivity"
+  },
+  "homepage": "https://reflexivity.com",
+  "repository": "https://github.com/toggleglobal/reflexivity-ai-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "investment-research",
+    "thematic-research",
+    "company-research",
+    "market-research",
+    "knowledge-graph",
+    "equities",
+    "earnings",
+    "catalysts"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.cursor-plugin/mcp.json",
+  "logo": "assets/reflexivity.svg"
+}

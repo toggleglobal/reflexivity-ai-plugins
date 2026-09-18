@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "reflexivity",
+  "version": "0.1.2",
+  "description": "Explore company exposures, competitors and themes, with published research from Reflexivity.",
+  "author": {
+    "name": "Reflexivity",
+    "url": "https://reflexivity.com"
+  },
+  "homepage": "https://reflexivity.com",
+  "repository": "https://github.com/toggleglobal/reflexivity-ai-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "investment-research",
+    "thematic-research",
+    "company-research",
+    "market-research",
+    "knowledge-graph",
+    "equities",
+    "earnings",
+    "catalysts"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Reflexivity",
+        "shortDescription": "Thematic, company, and market research",
+        "longDescription": "Understand company exposures and competitive relationships through Reflexivity’s Knowledge Graph. Find companies connected to a theme, explore supporting evidence, and read published research on earnings, catalysts and scenarios. Focus your research using saved watchlists and baskets.",
+        "developerName": "Reflexivity",
+        "category": "Finance",
+        "capabilities": [
+          "Read"
+        ],
+        "websiteURL": "https://reflexivity.com",
+        "defaultPrompt": [
+          "Explain NVIDIA’s main exposures and competitors.",
+          "Which companies are exposed to electric vehicles?",
+          "Summarize recent earnings for my watchlist."
+        ],
+        "logo": "./assets/reflexivity.svg",
+        "composerIcon": "./assets/reflexivity.svg"
+      }
+    }
+  }
+}
